@@ -1,0 +1,59 @@
+# Environment variables.
+# IMPORTANT: This file contains sensitive credentials.
+.env
+
+# Flutter/Dart specific
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+build/
+coverage/
+
+# IDE specific files
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+# Editor specific files
+.atom/
+.history
+*.swp
+
+# General
+*.class
+*.log
+*.pyc
+.build/
+.buildlog/
+.svn/
+migrate_working_dir/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Generated files
+app/src/main/assets/flutter_assets/
+
+# Android specific
+android/app/build/
+android/build/
+android/.gradle/
+android/key.properties
+android/local.properties
+
+# iOS specific
+ios/Pods/
+ios/Flutter/
+ios/.symlinks/
+**/ios/Flutter/.last_build_id
+
+# macOS
+.DS_Store
+.swiftpm/
