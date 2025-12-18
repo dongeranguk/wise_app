@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
-import 'package:wise_app/routing/app_router.dart';
+import 'package:wise_app/router.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
