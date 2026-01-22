@@ -36,6 +36,7 @@ lib/
 # Coding Conventions
 - **Riverpod:** Code Generation(`@riverpod`) 필수 사용.
 - **Model:** `Freezed` 패키지를 사용하여 불변 객체 생성. DB(Snake_case) <-> Dart(CamelCase) 자동 변환 설정.
+  - **Freezed 3.x 문법:** `abstract class` + `const factory` 필수 사용.
 - **Admin Logic:** 계정 생성 등 관리자 기능은 반드시 **Supabase Edge Functions**(`create-user`) 호출로 구현.
 - **UI:** Material 3 스타일 준수. 에러 발생 시 `SnackBar`로 사용자 피드백 제공.
 - **Routing:** `GoRouter` + `refreshListenable` 패턴으로 인증 상태에 따른 리다이렉트 처리.
