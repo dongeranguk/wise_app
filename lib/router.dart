@@ -4,6 +4,7 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:wise_app/features/auth/auth_repository.dart';
 import 'package:wise_app/features/auth/login_screen.dart';
+import 'package:wise_app/features/contacts/contacts_screen.dart';
 import 'package:wise_app/features/profile/profile_edit_screen.dart';
 import 'package:wise_app/features/profile/profile_screen.dart';
 import 'package:wise_app/home_screen.dart';
@@ -54,6 +55,15 @@ GoRouter router(Ref ref) {
               ),
             ],
           ),
+          // 연락처 탭
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: '/contacts',
+                builder: (context, state) => const ContactsScreen(),
+              ),
+            ],
+          ),
           // 프로필 탭
           StatefulShellBranch(
             navigatorKey: _shellNavigatorKey,
@@ -100,6 +110,7 @@ class MainScaffold extends StatelessWidget {
         },
         destinations: const [
           NavigationDestination(icon: Icon(Icons.home), label: '홈'),
+          NavigationDestination(icon: Icon(Icons.contacts), label: '연락처'),
           NavigationDestination(icon: Icon(Icons.person), label: '프로필'),
         ],
       ),
